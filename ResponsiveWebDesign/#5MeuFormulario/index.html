@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Veículos do Brasil</h1>
+    <p id="description">Este formulário coletará dados sobre o uso de veículos no Brasil para alimentar nossa base de dados.</p>
+    <div class="formContainer">
+        <form action="" id="survey-form">
+            <label id="name-label">Primeiro nome: <input type="text" name="first-name" id="name" required placeholder="João"></label>
+            <label id="last-name-label">Último nome: <input type="text" name="last-name" id="name" required placeholder="Silva"></label>
+            <label id="email-label">Email: <input type="email" name="email" id="email" required placeholder="joaoSilva@email.com"></label>
+            <label id="number-label">Idade: <input type="number" name="age" id="number" min="18" max="120" placeholder="40"></label>
+            <label for="dropdown">Qual a cor do seu veículo?</label>
+            <select name="select-veiculo" id="dropdown">
+                <option value="">(SELECIONE)</option>
+                <option value="1">Vermelho</option>
+                <option value="2">Amarelo</option>
+                <option value="3">Preto</option>
+                <option value="4">Branco</option>
+                <option value="5">Outro</option>
+            </select>
+            <label>Seu veículo é:
+                <label><input type="radio" name="used-notUsed" value="used" class="inline"/> Veículo Usado</label>
+                <label><input type="radio" name="used-notUsed" value="new" class="inline"/> Veículo Novo</label>
+            </label>
+            <label>Seu veículo se encaixa em qual(is) dessas categorias?
+                <label><input type="checkbox" name="paidIPVA" value="paidIPVA" class="inline"/>IPVA pago</label>
+                <label><input type="checkbox" name="oneOwner" value="oneOwner" class="inline"/>Unico dono</label>
+                <label><input type="checkbox" name="hasStep" value="hasStep" class="inline"/>Possui step</label>
+            </label>
+            <label>Gostaria de descrever melhor o seu veículo?
+                <textarea name="description" rows="3" cols="30" placeholder="Comprado em 2013, em Juiz de Fora..."></textarea>
+            </label>
+            <input type="submit" id="submit" value="Enviar"/>
+        </form>
+    </div>
+</body>
