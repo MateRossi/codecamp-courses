@@ -8,7 +8,7 @@ body {
 }
 
 .nav {
-    background-color: #2a23a1;
+    background-color: #242424;
     width: 100%;
     position: fixed;
     top: 0;
@@ -29,18 +29,18 @@ ul {
     margin-right: 3rem;
 }
 
-nav > ul > li {
+nav>ul>li {
     margin: 0;
     padding: 0;
     height: 100%;
     cursor: pointer;
 }
 
-nav > ul > li:hover{
-    background-color: #262926;
+nav>ul>li:hover {
+    background-color: #03032e;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
     display: block;
     margin: 0;
     padding: 1rem;
@@ -53,7 +53,7 @@ a {
 
 #welcome-section {
     width: 90%;
-    height: 50%;
+    height: 100vh;
     margin: 0 auto;
 }
 
@@ -69,4 +69,89 @@ h1 {
     text-align: center;
     color: #dadbc1;
     font-size: 1.5rem;
+}
+
+.projects-section-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+    color: #dadbc1;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.projects-grid img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.project-title {
+    padding-left: 10px;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#contact {
+    padding-top: 30px;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+i {
+    position: relative;
+    top: 30px;
+    left: 28%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+i:hover {
+    animation: 1s normal wave;
+}
+
+@keyframes wave {
+    10% {
+      transform: rotate(5deg) scale(1.2);
+    }
+    20% {
+      transform: rotate(10deg) scale(1.4);
+    }
+    30% {
+      transform: rotate(15deg) scale(1.6);
+    }
+    40% {
+      transform: rotate(20deg) scale(1.8);
+    }
+  }
+
+.icons {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    text-align: center;
+    color: #dadbc1;
+    font-size: 5rem;
 }
